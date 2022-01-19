@@ -1,0 +1,44 @@
+
+Step 1: Add .gitlab-ci.yml in the root folder of your project/repo
+
+- GitLab CI/CD pipeline are configured using YAML file called .gitlab-ci.yml in each project
+- .gitlab-ci.yml file defines the structure and order of the pipeline & determines
+- 
+Mac - textEdit, textWrangler
+Windows - Notepad, notepad++
+
+demo_job_1:
+     tags:
+       - ci
+     script:
+       - echo Hello World
+http://www.yamllint.com/
+
+Step 2: Commit and push file to gitlab repo
+
+Step 3: Create GitLab runner for the project
+Video - https://www.youtube.com/watch?v=R8rru...
+
+Step 4: Start the runner
+
+Step 5: Make any change in the project  ＞ commit ＞ push
+
+
+
+
+Step 1: Install GitLab Runner
+   https://docs.gitlab.com/runner/
+   https://docs.gitlab.com/runner/instal...
+
+gitlab-runner.exe install
+gitlab-runner --version
+   
+Step 2: Register GitLab Runner
+  (process to bind runner with gitlab instance)
+https://docs.gitlab.com/runner/regist...
+gitlab-runner.exe register
+
+Step 3: Start GitLab Runner
+gitlab-runner.exe start
+
+Step 4: Check runner is started in the project
